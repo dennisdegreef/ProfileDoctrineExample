@@ -1,3 +1,8 @@
+link0_profiling_doctrine:
+    resource: "@Link0ProfilingDoctrineBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation
