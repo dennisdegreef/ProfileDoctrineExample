@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c65b14257a096b44d59a0cf528ba315b",
+    "hash": "3fca73f3af0816619fecd15396418d81",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1021,6 +1021,57 @@
             ],
             "description": "A profiling library for PHP using XHProf or uprofiler and providing multiple persistance layers",
             "time": "2014-11-22 16:16:00"
+        },
+        {
+            "name": "link0/profiler-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/link0/ProfilerBundle.git",
+                "reference": "06de955d1e77ebfba45d0c96d3490495cf140e59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/link0/ProfilerBundle/zipball/06de955d1e77ebfba45d0c96d3490495cf140e59",
+                "reference": "06de955d1e77ebfba45d0c96d3490495cf140e59",
+                "shasum": ""
+            },
+            "require": {
+                "link0/profiler": "~0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2",
+                "symfony/framework-bundle": "~2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Link0\\ProfilerBundle": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dennis de Greef",
+                    "email": "github@link0.net",
+                    "homepage": "http://www.github.com/dennisdegreef"
+                }
+            ],
+            "description": "Profiler bundle for Symfony2 to profile automatically using the event listener",
+            "homepage": "http://github.com/link0/ProfilerBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "link0",
+                "profiler"
+            ],
+            "time": "2015-03-08 16:16:03"
         },
         {
             "name": "mockery/mockery",
@@ -2042,7 +2093,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "link0/profiler-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

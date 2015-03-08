@@ -21,10 +21,11 @@
         "sensio/distribution-bundle": "~3.0,>=3.0.12",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-        "link0/profiler": "~0.1"
+        "link0/profiler-bundle": "~1.0"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+	"phpunit/phpunit": "~4.2"
     },
     "scripts": {
         "post-root-package-install": [
