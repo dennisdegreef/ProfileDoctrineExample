@@ -1,1 +1,12 @@
-Hello {{ name }}!
+<table>
+    <tr>
+        <th>OneName</th>
+        <th>ManyName</th>
+    </tr>
+    {% for many in manies %}
+        <tr>
+            <td>{{ many.one.name }}</td>
+            <td>{{ many.name }}</td>
+        </tr>
+    {% endfor %}
+</table>
